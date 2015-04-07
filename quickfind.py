@@ -8,12 +8,13 @@ class QuickFind:
 
     def __init__(self,N):
         self.list1 = [x for x in range(N) ]
-
+    # if both node has the same value that means they are connected
     def connected(self,x,y):
         if (self.list1[x] == self.list1[y]):
             return True
         return False
 
+    # assign the value of node y to all the other node with value of node x. Linear time operation
     def union(self,x,y):
         if (self.connected(x,y)):
             return
