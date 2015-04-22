@@ -17,9 +17,9 @@ if __name__ == '__main__':
     n = head
     # printing the list
     while n.nextNode != head:
-        print (" {} ".format(n.value));
+        print (" {} ".format(n.value))
         n = n.nextNode
-    print (" {} ".format(n.value));
+    print (" {} ".format(n.value))
     # here n points to the last element of the list, where
     # n.nextNode = head
     while n != n.nextNode:
