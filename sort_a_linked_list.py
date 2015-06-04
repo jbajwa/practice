@@ -27,6 +27,7 @@ def sortList (n):
         # removing n
         prevn.nextNode = nextn
         copyn = Node (n.value)
+        n = prevn
 
         while True:
             #If the last element add at 2nd last position
@@ -36,7 +37,9 @@ def sortList (n):
                 break
             prevn = sortn
             sortn = sortn.nextNode
-            if copyn.value < sortn.value:
+            # if the copying node is smaller than current sorted list node
+            # then insert it before it
+            if int(copyn.value) < int(sortn.value):
                 prevn.nextNode = copyn
                 copyn.nextNode = sortn
                 break
