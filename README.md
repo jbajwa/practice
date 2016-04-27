@@ -1,2 +1,2 @@
 # practice
-Practice algo problems using python
+Practice problems using python/c/c++
