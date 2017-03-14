@@ -4,7 +4,7 @@ __author__ = 'jaideepbajwa'
 def Printprime(N):
     #initialise everything to True
     list1 = [True] * N
-    for x in range(2,N):
+    for x in range(2,N/2):
         y= 2
         while ((x*y) < N):
             # if already set then we continue to next element
